@@ -9,7 +9,6 @@ Source1001:    %{name}.manifest
 BuildRequires: pkgconfig(eet)
 BuildRequires: eet-bin
 Requires:      enlightenment
-ExclusiveArch:  %arm
 
 %description
 Data and configuration files for enlightenment
