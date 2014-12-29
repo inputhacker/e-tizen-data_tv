@@ -21,11 +21,17 @@ Makefile
 arm/Makefile
 arm/config/Makefile
 arm/config/tizen-tv/Makefile
+aarch64/Makefile
+aarch64/config/Makefile
+aarch64/config/tizen-tv/Makefile
 i386/Makefile
 i386/config/Makefile
 i386/config/tizen-tv/Makefile
 emulator/Makefile
 emulator/config/Makefile
 emulator/config/tizen-tv/Makefile
+x86_64/Makefile
+x86_64/config/Makefile
+x86_64/config/tizen-tv/Makefile
 ])
 AC_OUTPUT
