@@ -1,8 +1,8 @@
 XF86AudioRaiseVolume 115
 XF86AudioLowerVolume 114
 XF86PowerOff 116
-XF86Menu 169
-XF86Home 139
+XF86Menu 139
+XF86Home 169
 XF86Back 158
 XF86Camera_Full 212
 XF86Search 217
@@ -54,7 +54,7 @@ XF86LowerChannel 109
 XF86RaiseChannel 104
 XF86ChannelList 60
 XF86PreviousChannel 182
-XF86SysMenu 139
+XF86SysMenu 438
 XF86SimpleMenu 191
 XF86History 156
 XF86Favorites 190
@@ -77,3 +77,9 @@ XF86Guide 130
 XF86AudioMode 187
 XF86Subtitle 186
 XF863D 188
+Return 352
+XF86Home 354
+XF86TV 377
+XF86RaiseChannel 402
+XF86LowerChannel 403
+XF86AudioPrev 412
