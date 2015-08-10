@@ -5,12 +5,10 @@ EDJE_FLAGS = -v
 
 filesdir = /usr/share/enlightenment/data/backgrounds
 files_DATA = \
-Black_Screen.edj
+Black_Screen.edj \
+Tizen.edj
 
-EXTRA_DIST = \
-Black_Screen.edc
-
-Black_Screen.edj: Makefile $(EXTRA_DIST)
+Black_Screen.edj: Black_Screen.edc
 	$(EDJE_CC) $(EDJE_FLAGS) \
 	$(top_srcdir)/default/backgrounds/Black_Screen.edc \
 	$(top_builddir)/default/backgrounds/Black_Screen.edj

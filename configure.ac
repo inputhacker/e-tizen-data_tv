@@ -42,6 +42,7 @@ AC_ARG_WITH([wayland],
 
 ### define MODULES
 if test "$WITH_X"; then
+ background='Tizen'
  enabled_modules='group "modules" list {
     group "E_Config_Module" struct {
       value "name" string: "e-mod-tizen-wm-policy";
@@ -75,6 +76,7 @@ if test "$WITH_X"; then
     value "module" string: "e-mod-tizen-devicemgr";
   }'
 elif test "$WITH_WAYLAND"; then
+ background='Black_Screen'
  enabled_modules='group "modules" list {
     group "E_Config_Module" struct {
       value "name" string: "wl_drm";
@@ -140,8 +142,10 @@ elif test "$WITH_WAYLAND"; then
     value "module" string: "bufferqueue";
   }'
 fi
+AC_SUBST([background])
 AC_SUBST([enabled_modules])
 AC_SUBST([bad_modules])
+AM_SUBST_NOTMAKE([background])
 AM_SUBST_NOTMAKE([enabled_modules])
 AM_SUBST_NOTMAKE([bad_modules])
 ### Done MODULES

@@ -234,6 +234,6 @@ group "E_Config" struct {
   value "powersave.min" int: 0;
   value "powersave.max" int: 5;
   value "wm_win_rotation" uchar: 1;
-  value "desktop_default_background" string: "Black_Screen.edj";
+  value "desktop_default_background" string: "@background@.edj";
   value "window_activehint_policy" int: 2;
 }
