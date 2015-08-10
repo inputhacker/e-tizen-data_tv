@@ -6,6 +6,7 @@ EDJE_FLAGS = -v
 filesdir = /usr/share/enlightenment/data/backgrounds
 files_DATA = \
 Black_Screen.edj \
+Gradation.edj \
 Tizen.edj
 
 Black_Screen.edj: Black_Screen.edc

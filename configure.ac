@@ -42,7 +42,7 @@ AC_ARG_WITH([wayland],
 
 ### define MODULES
 if test "$WITH_X"; then
- background='Tizen'
+ background='Gradation'
  enabled_modules='group "modules" list {
     group "E_Config_Module" struct {
       value "name" string: "e-mod-tizen-wm-policy";
