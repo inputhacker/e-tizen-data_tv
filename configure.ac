@@ -45,6 +45,18 @@ if test "$WITH_X"; then
  background='Gradation'
  enabled_modules='group "modules" list {
     group "E_Config_Module" struct {
+        value "name" string: "fileman";
+        value "enabled" uchar: 1;
+        value "delayed" uchar: 1;
+        value "priority" int: 0;
+    }
+    group "E_Config_Module" struct {
+        value "name" string: "fileman_opinfo";
+        value "enabled" uchar: 1;
+        value "delayed" uchar: 1;
+        value "priority" int: 0;
+    }
+    group "E_Config_Module" struct {
       value "name" string: "e-mod-tizen-wm-policy";
       value "enabled" uchar: 1;
       value "delayed" uchar: 0;
