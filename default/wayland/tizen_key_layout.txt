@@ -82,4 +82,5 @@ XF86Home 354
 XF86TV 377
 XF86RaiseChannel 402
 XF86LowerChannel 403
-XF86AudioPrev 412
+XF86AudioPrev 405
+XF86AudioNext 407
