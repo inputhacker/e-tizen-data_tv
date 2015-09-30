@@ -57,7 +57,7 @@ minus 12 keyboard
 XF86LowerChannel 109
 XF86RaiseChannel 104
 XF86ChannelList 60
-XF86PreviousChannel 182
+XF86PreviousChannel 412
 XF86SysMenu 438
 XF86SimpleMenu 191
 XF86History 156
