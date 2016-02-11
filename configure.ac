@@ -201,6 +201,7 @@ default/Makefile
 default/backgrounds/Makefile
 default/config/Makefile
 default/config/tizen-tv/Makefile
+default/themes/Makefile
 ])
 AC_OUTPUT([
 ])
