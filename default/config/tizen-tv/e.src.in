@@ -115,7 +115,8 @@ group "E_Config" struct {
     }
   }
   value "comp_shadow_file" string: "/usr/share/elementary/themes/default.edj";
-  value "wayland_socket_owner" string: "root";
-  value "wayland_socket_group" string: "display";
-  value "wayland_socket_permissions" int: 509; // decimal for 0775
+  value "wl_sock_access.use" uchar: 1;
+  value "wl_sock_access.owner" string: "root";
+  value "wl_sock_access.group" string: "display";
+  value "wl_sock_access.permissions" int: 509; // decimal for 0775
 }
