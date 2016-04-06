@@ -55,7 +55,7 @@ cp -a %{_builddir}/%{buildsubdir}/COPYING %{buildroot}/%{TZ_SYS_RO_SHARE}/licens
 
 # install service
 %__mkdir_p %{buildroot}%{_unitdir}
-install -m 644 default/wayland/display-manager.service %{buildroot}%{_unitdir}
+install -m 644 data/units/display-manager.service %{buildroot}%{_unitdir}
 
 %__mkdir_p %{buildroot}%{_unitdir_user}
 install -m 644 data/units/enlightenment-user.service %{buildroot}%{_unitdir_user}
