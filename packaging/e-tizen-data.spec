@@ -45,10 +45,12 @@ cp -a %{_builddir}/%{buildsubdir}/COPYING %{buildroot}/%{TZ_SYS_RO_SHARE}/licens
 %__mkdir_p %{buildroot}/%{TZ_SYS_RO_SHARE}/enlightenment/data/config/tizen-tv
 %__mkdir_p %{buildroot}/%{TZ_SYS_RO_SHARE}/enlightenment/data/backgrounds
 %__mkdir_p %{buildroot}/%{TZ_SYS_RO_SHARE}/enlightenment/data/themes
+%__mkdir_p %{buildroot}/%{_libdir}/udev/hwdb.d
 %__cp -afr default/config/*.cfg          %{buildroot}/%{TZ_SYS_RO_SHARE}/enlightenment/data/config
 %__cp -afr default/config/tizen-tv/*.cfg %{buildroot}/%{TZ_SYS_RO_SHARE}/enlightenment/data/config/tizen-tv
 %__cp -afr default/backgrounds/*.edj     %{buildroot}/%{TZ_SYS_RO_SHARE}/enlightenment/data/backgrounds
 %__cp -afr default/themes/*.edj     %{buildroot}/%{TZ_SYS_RO_SHARE}/enlightenment/data/themes
+%__cp -f hwdb.d/99-hauppauge.hwdb %{buildroot}/%{_libdir}/udev/hwdb.d/99-hauppauge.hwdb
 
 %define daemon_user display
 %define daemon_group display
@@ -85,6 +87,9 @@ ln -sf ../enlightenment-user.path %{_unitdir_user}/default.target.wants/
 
 rm -rf %{_localstatedir}/lib/enlightenment
 
+%post
+udevadm hwdb --update
+
 %postun
 rm -f %{_unitdir}/graphical.target.wants/display-manager.service
 rm -f %{_unitdir_user}/default.target.wants/enlightenment-user.path
@@ -103,3 +108,4 @@ rm -f %{_unitdir_user}/default.target.wants/enlightenment-user.path
 %{_unitdir_user}/enlightenment-user.service
 %config %{_sysconfdir}/sysconfig/enlightenment
 %config %{_sysconfdir}/profile.d/enlightenment.sh
+%{_libdir}/udev/hwdb.d/99-hauppauge.hwdb
