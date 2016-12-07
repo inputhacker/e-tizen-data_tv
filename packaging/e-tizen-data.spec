@@ -14,7 +14,7 @@ BuildRequires: pkgconfig(eet)
 BuildRequires: pkgconfig(edje)
 BuildRequires: eet-bin
 BuildRequires: edje-tools
-BuildRequires: xkb-tizen-data
+BuildRequires: xkb-tizen-data-profile_tv
 Requires:      enlightenment
 
 %{!?TZ_SYS_RO_SHARE: %global TZ_SYS_RO_SHARE /usr/share}
