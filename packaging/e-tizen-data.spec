@@ -1,7 +1,7 @@
 %define alias e-tizen-data
 
 Name:          e-tizen-data-profile_tv
-Version:       0.3.12
+Version:       0.3.13
 Release:       0
 Provides:      e-tizen-data = %{version}-%{release}
 BuildArch:     noarch
