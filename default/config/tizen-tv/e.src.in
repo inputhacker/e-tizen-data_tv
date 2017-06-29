@@ -167,4 +167,5 @@ group "E_Config" struct {
       value "sock_symlink_access.smack.flags" int: 0;
     }
   }
+  value "hold_prev_win_img" int: 0;
 }
