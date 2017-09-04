@@ -21,6 +21,7 @@ Requires:      e-mod-tizen-devicemgr
 Requires:      e-mod-tizen-keyrouter
 Requires:      e-mod-tizen-wl-textinput
 Requires:      e-mod-tizen-processmgr
+Requires:      e-mod-tizen-gesture
 Requires:      xkeyboard-config
 
 %{!?TZ_SYS_RO_SHARE: %global TZ_SYS_RO_SHARE /usr/share}
