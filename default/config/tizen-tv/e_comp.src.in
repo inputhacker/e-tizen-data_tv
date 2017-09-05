@@ -225,6 +225,7 @@ group "Comp_Config" struct {
     value "shadow_style" string: "none";
     value "effect_file" string: "/usr/share/enlightenment/data/themes/effect.edj";
     value "effect_style" string: "none";
+    value "kbd_effect_style" string: "keyboard";
     value "engine" int: @COMP_ENGINE@;
     value "max_unmapped_time" int: 36000;
     value "min_unmapped_time" int: 300;
