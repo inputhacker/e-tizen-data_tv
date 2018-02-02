@@ -3,4 +3,4 @@ Description=Creating a link file for user to access wayland-0
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/ln -sf /run/wayland-0 /run/user/%U/
+ExecStart=/usr/bin/ln -s /run/wayland-0 /run/user/%U/
